@@ -1,0 +1,23 @@
+\documentclass[fonset = fandol]{ctexart}
+\usepackage{graphicx}
+\usepackage[showframe]{geometry}
+
+\begin{document}
+\begin{figure}
+	\centering
+	% 使用 minipage，底部对齐
+	\begin{minipage}[b]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{image1}
+		\caption{示例图片1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{image2}
+		\caption{示例图片2}
+	\end{minipage}
+% 这个总题注应该会很少用到的吧
+\caption{总题注}
+\end{figure}
+\end{document}

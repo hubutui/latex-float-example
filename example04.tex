@@ -1,0 +1,30 @@
+\documentclass[fonset = fandol]{ctexart}
+\usepackage{graphicx}
+\usepackage[showframe]{geometry}
+
+% subcaption 和 caption 一般搭配使用
+\usepackage{caption}
+\usepackage{subcaption}
+\begin{document}
+\begin{figure}
+	\centering
+	\begin{minipage}[b]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{image1}
+		\subcaption{示例图片1}
+		\label{fig:1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{image2}
+		\subcaption{示例图片2}
+		\label{fig:2}
+	\end{minipage}
+	\caption{示例图片}
+	\label{fig:3}
+\end{figure}
+
+图 \ref{fig:1} 和图 \ref{fig:2} 是 \ref{fig:3} 的子图．
+
+\end{document}
